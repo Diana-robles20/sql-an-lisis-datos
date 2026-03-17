@@ -5,9 +5,9 @@ Aplicar SQL para explorar, analizar y estructurar datos en bases relacionales.
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
-### 🔹 Querying
+### Querying
 Consultas sobre múltiples datasets:
 
 - Cyberchase → análisis de episodios (filtros, fechas, agregaciones)
@@ -16,7 +16,7 @@ Consultas sobre múltiples datasets:
 
 ---
 
-## 🧠 Habilidades demostradas
+## Habilidades demostradas
 
 - Filtrado de datos (WHERE)
 - Búsqueda con patrones (LIKE)
@@ -27,14 +27,9 @@ Consultas sobre múltiples datasets:
 
 ---
 
-## 📚 Dataset
+## Dataset
 
-Base de datos proporcionada por curso de Harvard (CS50).
+Base de datos proporcionada por curso de Harvard (CS50 Introduction to Databases with SQL).
 
 ---
 
-## ⚙️ Cómo usar este proyecto
-
-```bash
-sqlite3 cyberchase.db
-.read queries.sql
