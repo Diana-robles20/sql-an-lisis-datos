@@ -52,7 +52,7 @@ En este proyecto se utiliza una base de datos (`players.db`) con información de
 
 ---
 
-## Habilidades demostradas
+### Habilidades demostradas
 
 - Filtrado de datos (WHERE)
 - Búsqueda con patrones (LIKE)
