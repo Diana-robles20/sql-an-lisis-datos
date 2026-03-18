@@ -77,7 +77,50 @@ Para cada caso, se busca determinar:
 - El tipo de ubicación (residencial, negocio, etc.)
 - El contenido del paquete
 
-La información disponible es limitada, por lo que es necesario analizar la base de datos (`packages.db`) que contiene registros del tránsito de paquetes en la ciudad.
+### Estructura de la base de datos
+
+La base de datos `packages.db` permite rastrear el movimiento de paquetes dentro de la ciudad mediante múltiples tablas relacionadas.
+
+#### addresses
+Contiene las direcciones registradas en el sistema.
+- `id`: identificador único de la dirección  
+- `address`: dirección física  
+- `type`: tipo de ubicación (residencial, comercial, etc.)  
+
+#### drivers
+Contiene información de los conductores encargados de los envíos.
+- `id`: identificador del conductor  
+- `name`: nombre del conductor  
+
+#### packages
+Contiene la información general de los paquetes.
+- `id`: identificador del paquete  
+- `contents`: contenido del paquete  
+- `from_address_id`: dirección de origen  
+- `to_address_id`: dirección de destino (no necesariamente la ubicación final)  
+
+#### scans
+Registra el historial de seguimiento de cada paquete.
+- `id`: identificador del registro  
+- `driver_id`: conductor que realizó el escaneo  
+- `package_id`: paquete escaneado  
+- `address_id`: ubicación del escaneo  
+- `action`: acción realizada (“Pick” o “Drop”)  
+- `timestamp`: fecha y hora del evento  
+
+---
+### Relaciones entre entidades
+
+- Un **driver** puede realizar múltiples **scans**, pero cada scan es realizado por un solo driver.
+
+- Cada **scan** está asociado a un único **package**, mientras que un package puede tener múltiples scans a lo largo de su recorrido.
+
+- Cada **scan** ocurre en una **address**, mientras que en una **address** se hacen varios **scan**
+
+- Cada **package** tiene una dirección de origen (`from_address_id`) y una dirección de destino (`to_address_id`), ambas referenciando a la entidad **addresses**.
+
+Estas relaciones permiten reconstruir el recorrido completo de un paquete desde su origen hasta su ubicación actual.
+
 
 ### Casos de análisis
 
