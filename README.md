@@ -28,9 +28,7 @@ En este proyecto se analiza la base de datos (`cyberchase.db`) que contiene info
 
 ### Players
 
-El béisbol es un deporte en el que dos equipos de 9 jugadores se turnan para batear y defender. El objetivo es anotar carreras (“runs”) al recorrer todas las bases antes de ser eliminado por el equipo contrario. Es especialmente popular en Estados Unidos y Canadá, donde la Major League Baseball (MLB) ha sido la principal liga profesional desde 1876.
-
-En este proyecto se utiliza una base de datos (`players.db`) con información de jugadores de la MLB que han participado entre 1871 y 2023. La tabla `players` contiene datos históricos y físicos de los jugadores.
+En este proyecto se utiliza una base de datos (`players.db`) con información de jugadores de la MLB (Major League Baseball) que han participado entre 1871 y 2023. La tabla `players` contiene datos históricos y físicos de los jugadores.
 
 #### Estructura de la tabla `players`
 
