@@ -156,6 +156,64 @@ Este caso requiere:
 - Quién lo recibió
   
 ---
+### DESE (Department of Elementary and Secondary Education) in Massachusetts 
+
+Este dataset contiene información sobre el sistema educativo en Massachusetts, organizado a nivel de distritos y escuelas. Permite analizar relaciones entre desempeño académico, gasto educativo y evaluaciones del personal.
+
+---
+
+### Estructura de la base de datos
+
+El sistema se organiza en torno a distritos escolares, que contienen múltiples escuelas y concentran información financiera y evaluaciones.
+
+#### districts
+Contiene información general de los distritos escolares.
+- `id`: identificador del distrito  
+- `name`: nombre del distrito  
+- `type`: tipo de distrito (público o charter)  
+
+---
+
+#### schools
+Representa las escuelas dentro de cada distrito.
+- `id`: identificador de la escuela  
+- `district_id`: distrito al que pertenece  
+- `name`: nombre de la escuela  
+- `type`: tipo de escuela  
+
+---
+
+#### graduation_rates
+Contiene métricas de desempeño académico por escuela.
+- `school_id`: escuela asociada  
+- `graduated`: porcentaje de graduación  
+- `dropped`: porcentaje de abandono escolar  
+
+---
+
+#### expenditures
+Información financiera a nivel distrito.
+- `district_id`: distrito asociado  
+- `pupils`: número de estudiantes  
+- `per_pupil_expenditure`: gasto por alumno  
+
+---
+
+#### staff_evaluations
+Evaluación del personal educativo por distrito.
+- `district_id`: distrito asociado  
+- `exemplary`: porcentaje de desempeño ejemplar  
+- `unsatisfactory`: porcentaje de desempeño insatisfactorio  
+
+---
+
+### Relaciones clave
+
+- Un **distrito** contiene múltiples **escuelas**  
+- Cada **escuela** reporta una métrica de **graduación**  
+- Los **distritos** pueden no hacer **gasto** o múltiples y asimismo no recibir **evaluación del personal** o recibir múltiples  
+
+---
 
 ## Datasets
 
