@@ -267,13 +267,13 @@ Información de salarios de los jugadores.
 
 ### Habilidades demostradas
 
-- Uso de **SQL para análisis de datos relacionales**, integrando información de múltiples tablas mediante JOINs y subconsultas  
-- Capacidad para **resolver problemas del mundo real** a partir de datos (seguimiento de paquetes, análisis educativo y deportivo)  
-- Aplicación de **funciones de agregación y análisis por grupos** (AVG, SUM, COUNT, GROUP BY, HAVING)  
-- Uso de **lógica analítica y secuencial** para construir soluciones paso a paso  
-- Manejo de **datos incompletos o ambiguos** mediante filtros y condiciones adecuadas  
-- Desarrollo de **métricas e indicadores** para evaluar desempeño (ej. eficiencia, promedios, comparaciones)  
-- Comprensión de **modelos relacionales y relaciones entre entidades**   
+- Uso de SQL para análisis de datos relacionales, integrando información de múltiples tablas mediante JOINs y subconsultas  
+- Capacidad para resolver problemas del mundo real a partir de datos (seguimiento de paquetes, análisis educativo y deportivo)  
+- Aplicación de funciones de agregación y análisis por grupos (AVG, SUM, COUNT, GROUP BY, HAVING)  
+- Uso de lógica analítica y secuencial para construir soluciones paso a paso  
+- Manejo de datos incompletos o ambiguos mediante filtros y condiciones adecuadas  
+- Desarrollo de métricas e indicadores para evaluar desempeño (ej. eficiencia, promedios, comparaciones)  
+- Comprensión de modelos relacionales y relaciones entre entidades   
 
 ---
 
