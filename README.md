@@ -10,22 +10,6 @@ Aplicar SQL para explorar, analizar y estructurar datos en bases relacionales.
 ## Querying
 Consultas sobre múltiples datasets:
 
-### Cyberchase
-
-Cyberchase es una serie animada educativa transmitida por el Public Broadcasting Service (PBS) desde 2002. Su objetivo es mostrar que las matemáticas están presentes en la vida cotidiana y que cualquier persona puede aprenderlas. A lo largo de los episodios, se abordan conceptos de matemáticas, ciencia y resolución de problemas.
-
-En este proyecto se analiza la base de datos (`cyberchase.db`) que contiene información de los episodios en la tabla `episodes`.
-
-#### Estructura de la tabla `episodes`
-
-- `id`: identificador único de cada episodio  
-- `season`: número de temporada en la que se emitió el episodio  
-- `episode_in_season`: número del episodio dentro de su temporada  
-- `title`: título del episodio  
-- `topic`: tema o concepto que el episodio busca enseñar  
-- `air_date`: fecha de emisión del episodio (formato YYYY-MM-DD)  
-- `production_code`: identificador único utilizado internamente por PBS para cada episodio  
-
 ### Players
 
 En este proyecto se utiliza una base de datos (`players.db`) con información de jugadores de la MLB (Major League Baseball) que han participado entre 1871 y 2023. La tabla `players` contiene datos históricos y físicos de los jugadores.
